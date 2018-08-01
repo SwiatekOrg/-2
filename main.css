@@ -22,6 +22,31 @@ body{
 	color: #fff;
 }
 
+#hamburger{
+	display: none;
+	width: 40px;
+	height: 35px;
+	margin-right: 50px;
+	border: 0;
+	border-top: 5px solid #fff;
+	background: transparent;
+	position: relative;
+}
+
+#hamburger::before, #hamburger::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid #fff;
+	transform: translateY(10px);
+}
+
+#hamburger::after{
+	transform: translateY(25px);
+}
+
 #navbar header{
 	text-align: center;
 	padding: 15px 30px;
@@ -181,6 +206,7 @@ body{
 .item > section > h4{
 	padding: 15px;
 	font-weight: 400;
+	text-align: center!important;
 }
 
 #conteiner #between > span{
@@ -546,5 +572,92 @@ footer{
 	#oferta #footer>a{
 	    margin-top: 20px;
 	    display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 400px){
+
+	#first p{
+		padding: 20px;
+	}
+
+	.item > section{
+		text-align: justify;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	#navbar ul{
+		display: none;
+	}
+
+	#hamburger{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	footer{
+		padding: 10px
+	}
+
+	#social{
+		margin-left: 30%;
+	}
+
+	#konkurs article{
+		max-width: 300px;
+	}
+
+
+	#first header{
+		font-size: 40px;
+		padding: 30px;
+	}
+
+	#oferta #footer >a{
+		margin-left: 0;
+	}
+
+	#konkurs article{
+		max-width: 250px;
+	}
+
+}
+
+@media only screen and (max-width: 425px){
+	#konkurs article{
+		max-width: 300px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	#konkurs article{
+		max-width: 400px;
+	}
+
+	#social{
+		margin-left: 35%;
+	}
+}
+
+@media only screen and (max-width: 760px){
+	#oferta #footer>a{
+		display: block;
+	    width: 160px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	#social{
+		margin-left: 28%;
+	}
+}
+
+@media only screen and (max-width: 330px){
+	#hamburger{
+		width: 25px;
 	}
 }
