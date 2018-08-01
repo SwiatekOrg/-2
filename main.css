@@ -502,7 +502,7 @@ footer{
 }
 
 
-@media screen and (max-width: 880px) {
+@media only screen and (max-width: 880px) {
 	#first header{
 		font-size: 55px;
 	}
@@ -538,7 +538,7 @@ footer{
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 	#konkurs article{
 		max-width: 600px;
 	}
