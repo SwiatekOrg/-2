@@ -90,6 +90,10 @@ body{
 	line-height: 150%;
 }
 
+#klik{
+	display: inline-block;
+}
+
 .rectangleLink{
 	color: #fff;
 	margin: 0 5px;
@@ -100,6 +104,7 @@ body{
 	background-color:rgba(255, 255, 255, 0);
 	box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
 	transition-duration: .3s;
+	margin-top: 30px;
 }
 
 .rectangleLink:hover{
@@ -495,4 +500,51 @@ footer{
     border-radius: 3px;
     font-weight: 700;
 }
+
+
+@media screen and (max-width: 880px) {
+	#first header{
+		font-size: 55px;
+	}
+	#container{
+		flex-flow: column;
+		margin: 20px;
+	    font-size: 20px;
+	}
+	#between{
+		display: none;
+	}
+	.quot{
+	    width: 90%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	#kontkatContainer{
+		flex-flow: column;
+	}
+	#social{
+		margin-left: 40%;
+	}
+	#form{
+		width: 90%;
+	}
+	#email, #temat, #textarea{
+		max-width: 800px;
+	}
+
+	#button{
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#konkurs article{
+		max-width: 600px;
+	}
+
+	#oferta #footer>a{
+	    margin-top: 20px;
+	    display: inline-block;
+	}
 }
